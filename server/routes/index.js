@@ -41,6 +41,11 @@ router.get('/login', async (req, res, next) => {
     }
 })
 
+
+router.get('/test', async (req, res, next) => {
+        res.json({ error: false, code: 200, message: 'Prueba de acceso', user: {} })
+})
+
 router.get('/:id', async (req, res, next) => {
     try {
         let results = await db.one(req.params.id)
