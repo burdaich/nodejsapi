@@ -3,12 +3,21 @@ const passwordHash = require('password-hash');
 
 
 
-const pool = mysql.createPool({
+/* const pool = mysql.createPool({
     connectionLimit: 10,
     password: '',
     user: 'root',
     database: 'my_app',
     host: 'localhost',
+    port: '3306'
+}) */
+
+const pool = mysql.createPool({
+    connectionLimit: 10,
+    password: 'a43dc3a7',
+    user: 'b9967eb595fd75',
+    database: 'heroku_8924fb6452c955f',
+    host: 'us-cdbr-east-02.cleardb.com',
     port: '3306'
 })
 
