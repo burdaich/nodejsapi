@@ -24,7 +24,7 @@ router.get('/getallusers', async (req, res, next) => {
     }
 })
 
-router.get('/login', async (req, res, next) => {
+router.post('/login', async (req, res, next) => {
     const requestedParams = ['email', 'password'];
     let user = { email: req.body.email, password: req.body.password }
 
